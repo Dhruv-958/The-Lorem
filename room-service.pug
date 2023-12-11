@@ -1,0 +1,43 @@
+extends layout 
+block nav-content 
+    header
+        <div class="navbar bcolor">
+            <div class="nav-container center">
+                <div class="nav">
+                    <h1 style="margin-left: 30px;">lorem</h1>
+                </div>
+                <div class="nav">
+                    <ul type="none" class="center">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about-us">About-Us</a></li>
+                        <li><a href="/contact">Contact-Us</a></li>
+                        <li><a href="/userLogout" style="color: #183A1D; font-size: 30px;"><i class="fa-solid fa-right-from-bracket"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+block title-content 
+    title Room-Service 
+block content
+    if det
+        <div class="rs center">
+            <div class="rsc center">
+                <div class="head">
+                    <h1 class="center rem3 head-font" style="position: relative; bottom: 50px;">Room <span style="color: #F0A04B;">Services</span></h1>
+                </div>
+                <form action="/room-service" method="post" class="center">
+                    input(type="text", name="email", value=`${det.email}`, class="input-form")
+                    input(type="number", name="room", value=`${det.room}`, class="input-form")
+                    <input type="datetime-local" name="date", class="input-form">
+                    button.btn Submit
+                </form>
+            </div>
+            <div class="rsc center">
+                <div class="head">
+                    <h1 class="center rem3 head-font" style="position: relative; bottom: 145px;">Room <span style="color: #F0A04B;">Service History</span></h1>
+                </div>
+                <form action="/service-history" method="get" class="center">
+                    <button class="btn" style="position: relative; bottom: 50px;">Service History</button>
+                </form>
+            </div>
+        </div>

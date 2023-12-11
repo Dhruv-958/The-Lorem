@@ -1,0 +1,42 @@
+extends layout 
+block nav-content 
+    header
+        <div class="navbar bcolor">
+            <div class="nav-container center">
+                <div class="nav">
+                    <h1 style="margin-left: 30px;">lorem</h1>
+                </div>
+                <div class="nav">
+                    <ul type="none" class="center">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about-us">About-Us</a></li>
+                        <li><a href="/contact">Contact-Us</a></li>
+                        <li><a href="/userLogout" style="color: #183A1D; font-size: 30px;"><i class="fa-solid fa-right-from-bracket"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+block title-content 
+    title Room-Service history 
+block content 
+    if dets
+        <div class="order-head">
+            <h1 class="center rem3 head-font">Request <span style="color: #F0A04B;">Room Service</span></h1>
+        </div>
+        <div class="orders-container center">
+            <div class="orders">
+                each d, index in dets
+                    <div class="order">
+                        <ul type="none">
+                            <li><span style="color: #F0A04B;">Serial No.:</span> #{index+1}</li>
+                            <li><span style="color: #F0A04B;">Date:</span> #{d.date}</li>
+                        </ul>
+                    </div>
+            </div>
+
+        </div>
+                <!-- <div class="rs">
+                    <p></p>
+                    <p><span>Serial No.:</span> </p>
+                    <p>Room-Service:<button id="btn" disabled style="font-size: 10px; color: white; margin: 10px;">Not Delivered</button></p>
+                </div> -->

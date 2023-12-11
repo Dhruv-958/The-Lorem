@@ -1,0 +1,48 @@
+extends layout 
+block nav-content
+    header
+        <div class="navbar bcolor">
+            <div class="nav-container center">
+                <div class="nav">
+                    <h1 style="margin-left: 30px;">lorem</h1>
+                </div>
+                <div class="nav">
+                    <ul type="none" class="center">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about-us">About-Us</a></li>
+                        <li><a href="/contact">Contact-Us</a></li>
+                        <li><a href="/login" style="color: #183A1D;">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+block title-content 
+    title Login 
+block content 
+    <div class="login-container">
+        <div class="login-head">
+            <h1 class="head-font rem3 center">Login to <span style="color: #F0A04B;">lorem</span></h1>
+        </div>
+        <div class="logins center">
+            <div class="login center">
+                <div class="l center">
+                    <h1 class="head-font">Staff-Login</h1>
+                </div>
+                <div class="l center">
+                    <form action="/staff-login" method="get">
+                        <button class="btn" style="width: 100px;">Go-to</button>
+                    </form>
+                </div>
+            </div>
+            <div class="login center">
+                <div class="l center">
+                    <h1 class="head-font">Customer-Login</h1>
+                </div>
+                <div class="l center">
+                    <form action="/cust-login" method="get">
+                        <button class="btn" style="width: 100px;">Go-to</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>

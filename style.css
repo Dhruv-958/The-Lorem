@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #183A1D;
+}
+
+.head-font{
+    font-family: 'Allerta Stencil', sans-serif;
+    color: #183A1D;
+}
+
+.rem3{
+    font-size: 3rem;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white{
+    color: white;
+}
+
+.bcolor{
+    background-color: #FEFBE9;
+}
+
+.input-form{
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn{
+    background-color: #183A1D;
+    color: #F0A04B;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.navbar{
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.nav-container{
+    color: white;
+}
+
+.nav-container a{
+    text-decoration: none;
+    font-family: 'Allerta Stencil', sans-serif;
+    color: #F0A04B;
+    font-size: 20px;
+    margin: 0 25px;
+}
+
+.nav-container h1{
+    font-size: 40px;
+    font-family: 'Allerta Stencil', sans-serif;
+    color: #F0A04B;
+}
+
+.nav{
+    width: 50%;
+}
+
+main{
+    background-color: #E1EEDD;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    height: 510px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+.footer{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    height: 100px;
+}
+
+.footer a{
+    margin: 0 100px;
+}
+
+.footer i{
+    font-size: 50px;
+}
+
+.home-content{
+    height: 510px;
+}
+
+.home{
+    width: 50%;
+}
+
+.home-head{
+    position: relative;
+    bottom: 40px;
+    right: 50px;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 30px;
+}
+
+.home-img img{
+    height: 450px;
+    border: 2px solid black;
+    border-radius: 20px;
+    /* width: 500px; */
+}
+
+.about-container{
+    padding: 20px;
+}
+
+.about{
+    background-color: #183A1D;
+    border-radius: 20px;
+    width: 70%;
+    margin: 20px;
+    padding: 20px;
+    height: 300px;
+}
+
+.about-content{
+    color: white;
+    width: 50%;
+    flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.img{
+    align-items: flex-start;
+}
+
+.about-content img{
+    height: 250px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.about-content p{
+    font-size: 20px;
+}
+
+.dynamic-texts{
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+.dynamic-texts li {
+    list-style: none;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+      top: -120px;
+    }
+}
+
+.dynamic-texts li h1{
+    position: relative;
+}
+
+.dynamic-texts li h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #183A1D;
+    border-left: 2px solid #F0A04B;
+    animation: typing 3s steps(22) infinite;
+}
+
+@keyframes typing {
+    100% {
+      left: 100%;
+    }
+}
+
+.contact-container{
+    height: 510px;
+}
+
+.contact{
+    height: 400px;
+    width: 50%;
+    flex-direction: column;
+}
+
+.contact-form{
+    width: 80%;
+}
+
+.contact-img img{
+    border: 2px black solid;
+    border-radius: 10px;
+}
+
+.login{
+    height: 400px;
+    width: 50%;
+    flex-direction: column;
+}
+
+.l{
+    margin: 10px;
+}
+
+.sl{
+    margin: 10px;
+    padding: 10px;
+}
+
+.contain{
+    margin: 0 200px;
+}
+.contain form{
+    margin: 10px;
+}
+
+.contain button{
+    margin: 30px;
+    width: 200px;
+}
+
+.service-head{
+    margin-bottom: 30px;
+}
+
+.service{
+    flex-direction: column;
+    height: 510px;
+}
+
+.details{
+    flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.det-head{
+    margin: 10px;
+}
+
+.det-content{
+    background-color: #183A1D;
+    color: white;
+    height: 250px;
+    width: 50%;
+    margin: 20px;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 20px;
+}
+
+.det-content li{
+    margin: 5px;
+}
+
+.food-order{
+    width: 50%;
+}
+
+.f-form form{
+    width: 70%;
+    flex-direction: column;
+}
+
+.orders-container{
+    flex-direction: column;
+    padding: 10px;
+}
+
+.orders{
+    width: 700px;
+    flex-direction: column;
+    height: 430px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.order{
+    color: white;
+    font-size: 20px;
+    width: 90%;
+    background-color: #183A1D;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.rsc{
+    width: 50%;
+    flex-direction: column;
+    height: 510px;
+}
+
+.rsc form{
+    width: 50%;
+    flex-direction: column;
+}
+
+.complain-container{
+    flex-direction: column;
+}
+
+.single{
+    flex-direction: column;
+}

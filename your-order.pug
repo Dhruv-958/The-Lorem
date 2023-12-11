@@ -1,0 +1,42 @@
+extends layout 
+block nav-content 
+    header
+        <div class="navbar bcolor">
+            <div class="nav-container center">
+                <div class="nav">
+                    <h1 style="margin-left: 30px;">lorem</h1>
+                </div>
+                <div class="nav">
+                    <ul type="none" class="center">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about-us">About-Us</a></li>
+                        <li><a href="/contact">Contact-Us</a></li>
+                        <li><a href="/staffLogout" style="color: #183A1D; font-size: 30px;"><i class="fa-solid fa-right-from-bracket"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+block title-content 
+    title Your Orders 
+block content 
+    if dets
+        <div class="order-head">
+            <h1 class="center rem3 head-font">Your <span style="color: #F0A04B;">Orders</span></h1>
+        </div>
+        <div class="orders-container center">
+            <div class="orders">
+                each d, index in dets
+                    <div class="order">
+                        <ul type="none">
+                            <li style="margin: 5px;"><span style="color: #F0A04B;">Serial No.:</span> #{index + 1}</li>
+                            <li style="margin: 5px;"><span style="color: #F0A04B;">Starters: </span>#{d.starters}</li>
+                            <li style="margin: 5px;"><span style="color: #F0A04B;">Main-Course: </span>#{d.main_course}</li>
+                            <li style="margin: 5px;"><span style="color: #F0A04B;">Desserts: </span>#{d.desserts}</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    else
+        <p>No Orders Placed</p>
+    
+        

@@ -1,0 +1,57 @@
+extends layout 
+block nav-content 
+    header
+        <div class="navbar bcolor">
+            <div class="nav-container center">
+                <div class="nav">
+                    <h1 style="margin-left: 30px;">lorem</h1>
+                </div>
+                <div class="nav">
+                    <ul type="none" class="center">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about-us">About-Us</a></li>
+                        <li><a href="/contact">Contact-Us</a></li>
+                        <li><a href="/userLogout" style="color: #183A1D; font-size: 30px;"><i class="fa-solid fa-right-from-bracket"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+block title-content 
+    title Your Details 
+block content 
+    if detail
+        <div class="details-container">
+            <div class="details center">
+                <div class="det-head">
+                    <h1 class="center head-font rem3">Your <span style="color: #F0A04B;">Details</span></h1>
+                </div>
+                <div class="det-content center">
+                    <ul type="none">
+                        <li><span style="color: #F0A04B;">Name:</span> #{detail.name} </li>
+                        <li><span style="color: #F0A04B;">Phone:</span> #{detail.phone} </li>
+                        <li><span style="color: #F0A04B;">Email:</span> #{detail.email} </li>
+                        <li><span style="color: #F0A04B;">Number of people:</span> #{detail.number} </li>
+                        <li><span style="color: #F0A04B;">Room No.: </span> #{detail.room} </li>
+                        <li><span style="color: #F0A04B;">Check-In Date:</span> #{detail.date} </li>
+                        <li><span style="color: #F0A04B;">Check-Out Date:</span> #{detail.ldate} </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    else
+        <div class="details">
+            <div class="detail-con">
+                <div class="det-head">
+                    <h1></h1>
+                </div>
+                <ul type="none">
+                    <li><span>Name:</span> #{detail.name} </li>
+                    <li><span>Phone:</span> #{detail.phone} </li>
+                    <li><span>Email:</span> #{detail.email} </li>
+                    <li><span>Number of people:</span> #{detail.number} </li>
+                    <li><span>Room No.: </span> #{detail.room} </li>
+                    <li><span>Check-In Date:</span> #{detail.date} </li>
+                    <li><span>Check-Out Date:</span> #{detail.ldate} </li>
+                </ul>
+            </div>
+        </div>

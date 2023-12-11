@@ -1,0 +1,65 @@
+extends layout 
+block nav-content 
+    header
+        <div class="navbar bcolor">
+            <div class="nav-container center">
+                <div class="nav">
+                    <h1 style="margin-left: 30px;">lorem</h1>
+                </div>
+                <div class="nav">
+                    <ul type="none" class="center">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about-us">About-Us</a></li>
+                        <li><a href="/contact">Contact-Us</a></li>
+                        <li><a href="/staffLogout" style="color: #183A1D; font-size: 30px;"><i class="fa-solid fa-right-from-bracket"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+block title-content     
+    title TLH - All Records 
+block content 
+    <div class="order-head">
+        <h1 class="rem3 center head-font">All <span style="color: #F0A04B;">Records</span></h1>
+    </div>
+    <div class="orders-container center">
+        <div class="orders">
+            each r in results
+                <div class="order">
+                    <ul type="none">
+                        <li><span style="color: #F0A04B;">Name:</span> #{r.name}</li>
+                        <li><span style="color: #F0A04B;">Phone No.:</span> #{r.phone}</li>
+                        <li><span style="color: #F0A04B;">Email:</span> #{r.email}</li>
+                        <li><span style="color: #F0A04B;">Total No. of Members:</span> #{r.number}</li>
+                        <li><span style="color: #F0A04B;">Room No.:</span> #{r.room}</li>
+                        <li><span style="color: #F0A04B;">Date:</span> #{r.date}</li>
+                        <li><span style="color: #F0A04B;">Check-out Date:</span> #{r.ldate}</li>
+                    </ul>
+                </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- h1 ALL RECORDS
+     <div class="container">
+        each r in results
+            <div class="customer-container">
+                <ul class="customer-details" type="none">
+                    <div class="detail-section">
+                        <li><span>Name:</span> #{r.name}</li>
+                        <li><span>Phone No.:</span> #{r.phone}</li>
+                        <li><span>Email:</span> #{r.email}</li>
+                        <li><span>Total No. of Members:</span> #{r.number}</li>
+                        <li><span>Room No.:</span> #{r.room}</li>
+                        <li><span>Date:</span> #{r.date}</li>
+                        <li><span>Check-out Date:</span> #{r.ldate}</li>
+                    </div>
+                </ul>
+            </div>
+    </div> -->

@@ -1,0 +1,99 @@
+extends layout 
+block nav-content 
+    header
+        <div class="navbar bcolor">
+            <div class="nav-container center">
+                <div class="nav">
+                    <h1 style="margin-left: 30px;">lorem</h1>
+                </div>
+                <div class="nav">
+                    <ul type="none" class="center">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about-us">About-Us</a></li>
+                        <li><a href="/contact">Contact-Us</a></li>
+                        <li><a href="/userLogout" style="color: #183A1D; font-size: 30px;"><i class="fa-solid fa-right-from-bracket"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+block title-content
+    <title>Your-Page | Services </title>
+block content
+    <div class="service center">
+        <div class="service-head">
+            <h1 class="center rem3 head-font">Services</h1>
+        </div>
+        <div class="contain center">
+            <form action="/cust-details" method="get">
+                <button class="btn">Your Info</button>
+            </form>
+            <form action="/food" method="get">
+                <button class="btn">Order Food</button>
+            </form>
+            <form action="/room-service" method="get">
+                <button class="btn">Room Service</button>
+            </form>
+        </div>
+        <div class="contain center">
+            <form action="">
+                <button class="btn button">Contact Doctor</button>
+            </form>
+            <form action="/complain">
+                <button class="btn">Complain</button>
+            </form>
+            //- <form action="/services" method="get">
+            //-     <button class="btn">Emergency</button>
+            //- </form>
+        </div>
+    </div>
+        
+    script.
+        const button = document.querySelector('.button'); // Select the button with the ID 'btnContactDoctor'
+        button.addEventListener('click', () => {
+            const phoneNumber = '123-456-7890'; // Replace with the actual phone number
+            alert('Phone Number: ' + phoneNumber); // Display an alert with the phone number
+        });
+
+
+
+
+
+
+
+//- extends layout 
+//- block title-content 
+//-     title Request For Services 
+//- block content 
+//-     <div class="service-container center">
+//-         <div class="services center">
+//-             <div class="service center">
+//-                 <h1>Your Details</h1>
+//-                 <form action="/cust-details" method="get">
+//-                     <button id="btn">Your Info</button>
+//-                 </form>
+//-             </div>
+//-             <div class="service center">
+//-                 <h1>Order Food</h1>
+//-                 <form action="/food" method="get">
+//-                     <button id="btn">Order Food</button>
+//-                 </form>
+//-             </div>
+//-             <div class="service center">
+//-                 <h1>Room Service</h1>
+//-                 <form action="/room-service" method="get">
+//-                     <button id="btn">Room Service</button>
+//-                 </form>
+//-             </div>
+//-             <div class="service center">
+//-                 <h1>Ask For Doctor</h1>
+//-                 <button id="btn" class="button">Contact Doctor</button>
+//-             </div>
+//-             <div class="service center">
+//-                 <h1>Address a complaint</h1>
+//-                 <form action="/comaplin">
+//-                     <button id="btn">Complain</button>
+//-                 </form>
+//-             </div>
+//-         </div>
+//-     </div>
+

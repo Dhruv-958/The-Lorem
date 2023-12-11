@@ -1,0 +1,65 @@
+extends layout
+block nav-content 
+    header
+        <div class="navbar bcolor">
+            <div class="nav-container center">
+                <div class="nav">
+                    <h1 style="margin-left: 30px;">lorem</h1>
+                </div>
+                <div class="nav">
+                    <ul type="none" class="center">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about-us">About-Us</a></li>
+                        <li><a href="/contact">Contact-Us</a></li>
+                        <li><a href="/userLogout" style="color: #183A1D; font-size: 30px;"><i class="fa-solid fa-right-from-bracket"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+block title-content 
+    title Order Food 
+    <script src="../static/index.js"></script>
+block content
+    if det 
+        <div class="food-container center">
+            <div class="food-order">
+                <div class="f">
+                    <h1 class="rem3 center head-font">Order <span style="color: #F0A04B;">Food</span></h1>
+                </div>
+                <div class="f-form center">
+                    <form action="/food" method="post" class="center">
+                        input(type="number", name="room" ,value =`${det.room}`, class="input-form")
+                        input(type="text", name="email" ,value = `${det.email}`, class="input-form")
+                        <input type="text" name="starters" placeholder="Add Starters" class ="input-form">
+                        <input type="text" name="main_course" placeholder="Add Your Main Course" class ="input-form">
+                        <input type="text" name="desserts" placeholder="Add Your Desserts" class ="input-form">
+                        <input type="text" name="extras" placeholder="Add Your Extras" class ="input-form">
+                        <button class="btn" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="food-order">
+                <div class="f-head" style="position: relative; bottom: 180px;">
+                    <h1 class="rem3 center head-font">Your <span style="color: #F0A04B;">Orders</span></h1>
+                </div>
+                <div class="f-dets center" style="position: relative; bottom: 50px;">
+                    <a href="/your-orders"><button class="btn">Go-to</button></a>
+                </div>
+            </div>
+        </div>
+        
+    else
+        <div class="food-container center">
+            form(action="/your-orders" method="get" class="center")
+                button#btn Your Orders 
+            <form action="/food" method="post" class="center">
+                h1#f Place Your Order
+                input(type="number", name="room" ,value =`${det.room}`, class="form-input")
+                input(type="text", name="email" ,value = `${det.email}`, class="form-input")
+                <input type="text" name="starters" placeholder="Add Starters" class ="form-input">
+                <input type="text" name="main_course" placeholder="Add Your Main Course" class ="form-input">
+                <input type="text" name="desserts" placeholder="Add Your Desserts" class ="form-input">
+                <input type="text" name="extras" placeholder="Add Your Extras" class ="form-input">
+                <button id="btn" type="submit">Submit</button>
+            </form>
+        </div>

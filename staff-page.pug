@@ -1,0 +1,71 @@
+extends layout 
+block nav-content 
+    header
+        <div class="navbar bcolor">
+            <div class="nav-container center">
+                <div class="nav">
+                    <h1 style="margin-left: 30px;">lorem</h1>
+                </div>
+                <div class="nav">
+                    <ul type="none" class="center">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about-us">About-Us</a></li>
+                        <li><a href="/contact">Contact-Us</a></li>
+                        <li><a href="/staffLogout" style="color: #183A1D; font-size: 30px;"><i class="fa-solid fa-right-from-bracket"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+block title-content 
+    title TLH - Staff Page
+block content 
+    <div class="service">
+        <div class="service-head">
+            <h1 class="rem3 center head-font">Staff <span style="color: #F0A04B;">Page</span></h1>
+        </div>
+        <div class="contain center">
+            <form action="/check-in" method="get">
+                <button class="btn">New Customers</button>
+            </form>
+            <form action="/customers" method="get">
+                <button class="btn">Present Customers</button>
+            </form>
+            <form action="/service-req" method="get">
+                <button class="btn">Service Requests</button>
+            </form>
+        </div>
+        <div class="contain center">
+            <form action="/records" method="get">
+                <button class="btn">All Records</button>
+            </form>
+            <form action="/complaints">
+                <button class="btn">Complaints</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- <div class="staff">
+        <div class="staff-container">
+            <h1 id="f">STAFF OPERATIONS</h1>
+            <div class="new-customer">
+                <h1>Add New Customers</h1>
+                
+            </div>
+            <div class="existing-customers">
+                <h1>Check-Out Customers</h1>
+                
+            </div>
+            <div class="services">
+                <h1>Services Requested from Customers</h1>
+                
+            </div>
+            <div class="all-customers">
+                <h1>Previous Records</h1>
+                
+            </div>
+        </div>
+    </div> -->
